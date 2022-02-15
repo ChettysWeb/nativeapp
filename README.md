@@ -1,13 +1,13 @@
 # nativeapp
-git clone https://github.com/ChettysWeb/nativeapp.git
-cd nativeap
-npm intall
-npm start
+git clone https://github.com/ChettysWeb/nativeapp.git </br>
+cd nativeap </br>
+npm intall </br>
+npm start </br>
+</br>
+› Press a │ open Android </br>
+› Press w │ open web</br>
 
-Press a │ open Android
-› Press w │ open web
-
-› Press r │ reload app
-› Press m │ toggle menu
-› Press d │ show developer tools
+› Press r │ reload app</br>
+› Press m │ toggle menu</br>
+› Press d │ show developer tools</br>
 › shift+d │ toggle auto opening developer tools on startup (disabled)
