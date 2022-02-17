@@ -23,12 +23,18 @@ export default class Loginscreen extends Component {
       alert("Please fill passwrd")
       return false
     }
-    return true
+    else if(username != "sonia" || password != "sonia"){
+      alert("username/password is incorrect")
+      return false
+    }
+   else{
+
+     return true
+   }
   }
   making_api_call=()=>{
     if(this.Validation()){
-      this.props.navigation.navigate('Home')
-      
+      this.props.navigation.navigate('Home','sonia')
     }
   }
   render() {
@@ -48,12 +54,12 @@ export default class Loginscreen extends Component {
           <TextInput placeholder={'Enter password'} onChangeText={(value)=>this.setState({password: value})} style={{height:42, width:"80%",fontSize:20,color:'#fff'  }} placeholderTextColor='white'/>
         </TouchableOpacity>
 
-        <TouchableOpacity style={{borderWidth:1, height:42, width:"100%", justifyContent:"center", alignItems:"center",backgroundColor:"orange", marginTop:"10%", borderWidth:0}} onPress={this.making_api_call }>
-          <Text style={{color:"white"}} >Login</Text>
+        <TouchableOpacity style={{borderWidth:1, height:42, width:"100%", justifyContent:"center", alignItems:"center",backgroundColor:"orange", marginTop:"5%", borderWidth:0}} onPress={this.making_api_call }>
+          <Text style={{color:"white", fontSize:20}} >Login</Text>
         </TouchableOpacity>
         </View> 
-        <TouchableOpacity style={{borderWidth:1, height:42, width:"100%", justifyContent:"center", alignItems:"center", marginTop:"10%", borderWidth:0}}  onPress={()=>this.props.navigation.navigate('Register')}>
-        <Text>Register</Text>
+        <TouchableOpacity style={{borderWidth:1, height:42, width:"100%", justifyContent:"center", alignItems:"center",  borderWidth:0}}  onPress={()=>this.props.navigation.navigate('Register')}>
+        <Text style={{ fontSize:20}}>Register</Text>
         </TouchableOpacity>
         
         </ImageBackground > 

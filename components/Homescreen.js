@@ -4,9 +4,16 @@ import IconAnt from 'react-native-vector-icons/AntDesign'
 import IconEnt from 'react-native-vector-icons/Entypo'
 
 export default class Homescreen extends Component {
-
+  // constructor(props){
+  //   super(props)
+  //   this.state={
+  //     username: this.props.navigation.getParam(username, 'Guest')
+  //   }
+    
+  // }
   
   render(){
+   
     return (
       <View style={styles.container}>
         <View style={{backgroundColor:"orange", height:"10%", width: "100%",  
@@ -27,7 +34,7 @@ export default class Homescreen extends Component {
         </View>
       <View>
         <Button title="Go to About" onPress={()=>this.props.navigation.navigate('About')}></Button>
-      
+    
       </View>
       </View>
 

@@ -63,8 +63,8 @@ export default class Registerscreen extends Component {
             <Text style={{color:"#000", fontSize:20}} >Signup</Text>
           </TouchableOpacity>
           </View> 
-          <TouchableOpacity style={{borderWidth:1, height:42, width:"100%", justifyContent:"center", alignItems:"center", marginTop:"10%", borderWidth:0}}  onPress={()=>this.props.navigation.navigate('Login')}>
-          <Text style={{color:"#000", fontSize:15}} >Login</Text>
+          <TouchableOpacity style={{borderWidth:1, height:42, width:"100%", justifyContent:"center", alignItems:"center",  borderWidth:0}}  onPress={()=>this.props.navigation.navigate('Login')}>
+          <Text style={{color:"#000", fontSize:20}} >Already have account? Login</Text>
           </TouchableOpacity>
         
         </ImageBackground > 
